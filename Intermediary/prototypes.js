@@ -1,29 +1,30 @@
-// let vehicle  = {wheels:4};
-// let car = {seats:4,__proto__: vehicle}
-// let driver = {__proto__: car}
+let vehicle  = {wheels:4};
+let car = {seats:4,__proto__: vehicle,wheels:6}
+let driver = {__proto__: car}
 
-// console.log(vehicle.__proto__)
-// console.log(car)
-// console.log(car.__proto__)
+//console.log(vehicle.__proto__)
+console.log(car)
+console.log(car.wheels)
+console.log(car.__proto__)
 
 //prototype based oop
 
-function Employee(name, phonenumber, designation){
-    this. name = name;
-     this. phonenumber = phonenumber;
-      this. designation = designation;
+// function Employee(name, phonenumber, designation){
+//     this. name = name;
+//      this. phonenumber = phonenumber;
+//       this. designation = designation;
 
-      this.printDetails =() => {
-        return `my name is ${this.name}\nyou can contact me via ${this. phonenumber}. I am the ${designation} of sulty bank`;
-      }
-      this.company = "sulty bank"
-      this.paySalary =() => {
-        if(this.designation === "manager"){
-            this.salary = 5000000;
-        }
-        else if(this.designation === "cook"){this.salary = 200000}
-      }
-}
+//       this.printDetails =() => {
+//         return `my name is ${this.name}\nyou can contact me via ${this. phonenumber}. I am the ${designation} of sulty bank`;
+//       }
+//       this.company = "sulty bank"
+//       this.paySalary =() => {
+//         if(this.designation === "manager"){
+//             this.salary = 5000000;
+//         }
+//         else if(this.designation === "cook"){this.salary = 200000}
+//       }
+// }
 
 // let employee1 = new Employee("sultan", "+090900000999", "manager");
 // let employee2 = new Employee("precious", "+090900000999", "manager2");
@@ -35,4 +36,4 @@ function Employee(name, phonenumber, designation){
 // console.log(employee1.printDetails())
 // console.log(employee1.isVerified)
 // console.log(employee1.isAvailable)
-module.exports = Employee
+//module.exports = Employee

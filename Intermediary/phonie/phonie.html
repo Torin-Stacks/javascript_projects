@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>phonie</title>
+
+</head>
+<body>
+    <p>Phonie</p>
+    <form action="">
+        <label for="phonenumber"> Enter your phone number</label>
+        <br>
+        <input type="tel" id="phonenumber" name="phonenumber" pattern="[0-9]{4}-[0-9]{3}-[0-9]{4}" maxlength="11" minlength="11" size = "13" required>
+        <br>
+        <!-- <input type="submit" onclick="submit()" value="Submit"> -->
+        <button onclick="add()">Submit</button>
+    </form>
+    <div>
+        <img src="./img/plain white background.jpeg" alt="telecom logo" height="" width="">
+    </div>
+
+    <script src="phonie.js"></script>
+</body>
+</html>
